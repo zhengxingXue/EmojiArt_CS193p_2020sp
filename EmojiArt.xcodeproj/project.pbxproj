@@ -14,6 +14,7 @@
 		383D0C84264451120015B6A3 /* EmojiArtDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D0C83264451120015B6A3 /* EmojiArtDocument.swift */; };
 		383D0C86264455D50015B6A3 /* EmojiArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D0C85264455D50015B6A3 /* EmojiArt.swift */; };
 		383D0C8A26459B8F0015B6A3 /* EmojiArtExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D0C8926459B8F0015B6A3 /* EmojiArtExtensions.swift */; };
+		383D0C8C2645BFF80015B6A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 383D0C8B2645BFF80015B6A3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		383D0C83264451120015B6A3 /* EmojiArtDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocument.swift; sourceTree = "<group>"; };
 		383D0C85264455D50015B6A3 /* EmojiArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArt.swift; sourceTree = "<group>"; };
 		383D0C8926459B8F0015B6A3 /* EmojiArtExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtExtensions.swift; sourceTree = "<group>"; };
+		383D0C8B2645BFF80015B6A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				383D0C78264450E80015B6A3 /* Assets.xcassets */,
 				383D0C7D264450E80015B6A3 /* Info.plist */,
 				383D0C7A264450E80015B6A3 /* Preview Content */,
+				383D0C8B2645BFF80015B6A3 /* README.md */,
 			);
 			path = EmojiArt;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383D0C8C2645BFF80015B6A3 /* README.md in Resources */,
 				383D0C7C264450E80015B6A3 /* Preview Assets.xcassets in Resources */,
 				383D0C79264450E80015B6A3 /* Assets.xcassets in Resources */,
 			);
