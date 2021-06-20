@@ -19,11 +19,18 @@ class EmojiArtDocument: ObservableObject {
         }
     }
     
+    @Published var selectedEmojiSet: Set<EmojiArt.Emoji> {
+        didSet {
+            print("\(selectedEmojiSet)")
+        }
+    }
+    
     private static let untitled = "EmojiArtDocument.Untitled"
     
     init() {
         // UserDefaults.standard.set(EmojiArt().json, forKey: EmojiArtDocument.untitled)
         emojiArt = EmojiArt(json: UserDefaults.standard.data(forKey: EmojiArtDocument.untitled)) ?? EmojiArt()
+        selectedEmojiSet = []
         fetchBackgroundImageData()
     }
     
@@ -47,6 +54,12 @@ class EmojiArtDocument: ObservableObject {
     func scaleEmoji(_ emoji: EmojiArt.Emoji, by scale: CGFloat) {
         if let index = emojiArt.emojis.firstIndex(matching: emoji) {
             emojiArt.emojis[index].size = Int((CGFloat(emojiArt.emojis[index].size) * scale).rounded(.toNearestOrEven))
+        }
+    }
+    
+    func removeEmoji(_ emoji: EmojiArt.Emoji) {
+        if let index = emojiArt.emojis.firstIndex(matching: emoji) {
+            emojiArt.emojis.remove(at: index)
         }
     }
     
