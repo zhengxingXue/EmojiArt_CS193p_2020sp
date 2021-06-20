@@ -67,7 +67,7 @@ struct EmojiArtDocumentView: View {
                                     .onTapGesture {
                                         self.document.selectedEmojiSet.toggleMatching(of: emoji)
                                     }
-//                                    .gesture(unselectedEmojiPanGesture(for: emoji))
+                                    .gesture(unselectedEmojiPanGesture(for: emoji))
                             }
                         }
                     }
@@ -168,17 +168,23 @@ struct EmojiArtDocumentView: View {
             }
     }
     
-//    @GestureState private var unselectedEmojiPanOffset: CGSize = .zero
-//
-//    private func unselectedEmojiPanGesture(for emoji: EmojiArt.Emoji) -> some Gesture {
-//        DragGesture()
-//            .updating($unselectedEmojiPanOffset) { latestDragGestureValue, unselectedEmojiPanOffset, transaction in
-//                unselectedEmojiPanOffset = latestDragGestureValue.translation
-//            }
-//            .onEnded { finalDragGestureValue in
-//                self.document.moveEmoji(emoji, by: finalDragGestureValue.translation / self.zoomScale)
-//            }
-//    }
+    struct UnselectedEmoji {
+        var emoji: EmojiArt.Emoji?
+        var panoffset: CGSize
+    }
+    
+    @GestureState private var unselectedEmoji: UnselectedEmoji = UnselectedEmoji(emoji: nil, panoffset: .zero)
+
+    private func unselectedEmojiPanGesture(for emoji: EmojiArt.Emoji) -> some Gesture {
+        DragGesture()
+            .updating($unselectedEmoji) { latestDragGestureValue, unselectedEmoji, transaction in
+                unselectedEmoji.panoffset = latestDragGestureValue.translation
+                unselectedEmoji.emoji = emoji
+            }
+            .onEnded { finalDragGestureValue in
+                self.document.moveEmoji(emoji, by: finalDragGestureValue.translation / self.zoomScale)
+            }
+    }
     
     private func zoomToFit(_ image: UIImage?, in size: CGSize) {
         if let image = image, image.size.width > 0, image.size.height > 0 {
@@ -201,8 +207,10 @@ struct EmojiArtDocumentView: View {
         if self.document.selectedEmojiSet.contains(matching: emoji) {
             location = CGPoint(x: location.x + gestureEmojiPanOffset.width, y: location.y + gestureEmojiPanOffset.height)
         }
-
-//        location = CGPoint(x: location.x + unselectedEmojiPanOffset.width, y: location.y + unselectedEmojiPanOffset.height)
+        if emoji == self.unselectedEmoji.emoji {
+            location = CGPoint(x: location.x + self.unselectedEmoji.panoffset.width, y: location.y + self.unselectedEmoji.panoffset.height)
+        }
+        
 
         return location
     }
