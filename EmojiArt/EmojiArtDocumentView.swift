@@ -168,7 +168,7 @@ struct EmojiArtDocumentView: View {
             }
     }
     
-    struct UnselectedEmoji {
+    private struct UnselectedEmoji {
         var emoji: EmojiArt.Emoji?
         var panoffset: CGSize
     }
