@@ -14,6 +14,7 @@
 		38048968267FAD2F00AB1695 /* Spining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38048967267FAD2F00AB1695 /* Spining.swift */; };
 		3804896A26802AD000AB1695 /* PaletteChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3804896926802AD000AB1695 /* PaletteChooser.swift */; };
 		3804896C26802C9B00AB1695 /* EmojiArtDocumentPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3804896B26802C9B00AB1695 /* EmojiArtDocumentPalette.swift */; };
+		3804896E2680310100AB1695 /* lecture_9_demo_ipad_record.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3804896D2680310100AB1695 /* lecture_9_demo_ipad_record.gif */; };
 		383D0C75264450E50015B6A3 /* EmojiArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D0C74264450E50015B6A3 /* EmojiArtApp.swift */; };
 		383D0C77264450E50015B6A3 /* EmojiArtDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D0C76264450E50015B6A3 /* EmojiArtDocumentView.swift */; };
 		383D0C79264450E80015B6A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383D0C78264450E80015B6A3 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		38048967267FAD2F00AB1695 /* Spining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spining.swift; sourceTree = "<group>"; };
 		3804896926802AD000AB1695 /* PaletteChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteChooser.swift; sourceTree = "<group>"; };
 		3804896B26802C9B00AB1695 /* EmojiArtDocumentPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentPalette.swift; sourceTree = "<group>"; };
+		3804896D2680310100AB1695 /* lecture_9_demo_ipad_record.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lecture_9_demo_ipad_record.gif; sourceTree = "<group>"; };
 		383D0C71264450E50015B6A3 /* EmojiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		383D0C74264450E50015B6A3 /* EmojiArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtApp.swift; sourceTree = "<group>"; };
 		383D0C76264450E50015B6A3 /* EmojiArtDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				3804895F267EA69000AB1695 /* lecture_8_demo_ipad_record.gif */,
 				38048965267F96E500AB1695 /* assignment_4_demo_ipad_record.gif */,
+				3804896D2680310100AB1695 /* lecture_9_demo_ipad_record.gif */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				38048966267F96E500AB1695 /* assignment_4_demo_ipad_record.gif in Resources */,
 				383D0C7C264450E80015B6A3 /* Preview Assets.xcassets in Resources */,
 				383D0C79264450E80015B6A3 /* Assets.xcassets in Resources */,
+				3804896E2680310100AB1695 /* lecture_9_demo_ipad_record.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
