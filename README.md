@@ -4,6 +4,12 @@ My code for Stanford's Spring 2020 CS193p course (https://cs193p.sites.stanford.
 
 ## EmojiArt
 
+### Lecture 10
+
+<p align="middle">
+<img src="EmojiArt/resources/lecture_10_demo_ipad_record.gif"/>
+</p>
+
 ### Lecture 9
 
 <p align="middle">
