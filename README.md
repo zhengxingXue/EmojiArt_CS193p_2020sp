@@ -1,6 +1,6 @@
 # EmojiArt_CS193p_2020sp
 
-My code for Stanford's Spring 2020 CS193p course (https://cs193p.sites.stanford.edu/) Lecture 7, 8 demo
+My code for Stanford's Spring 2020 CS193p course (https://cs193p.sites.stanford.edu/) Lecture 7 - 10 demo and assignment 4
 
 ## EmojiArt
 
